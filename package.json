@@ -1,0 +1,22 @@
+{
+  "name": "web_komis",
+  "version": "1.0.0",
+  "description": "ARI DEV",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjiRamdaniARM/Komis-ARI.git"
+  },
+  "keywords": [
+    "ARI"
+  ],
+  "author": "ARI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjiRamdaniARM/Komis-ARI/issues"
+  },
+  "homepage": "https://github.com/AjiRamdaniARM/Komis-ARI#readme"
+}
