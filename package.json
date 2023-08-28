@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/AjiRamdaniARM/Komis-ARI/issues"
   },
-  "homepage": "https://github.com/AjiRamdaniARM/Komis-ARI#readme"
+  "homepage": "https://github.com/AjiRamdaniARM/Komis-ARI#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

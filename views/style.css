@@ -1,0 +1,76 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("./font/montserrat.ttf");
+}
+
+:root {
+    --main-color : #000;
+    --active-color : #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #212121;;
+}
+.container {
+    width: 330px;
+    min-height: 100%;
+    position: fixed;
+    flex-shrink: 0;
+    border-radius: 10px 0px;
+    background: #2B313A;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.sidebar > .header {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.description-header {
+    color: #CFCFCF;
+    font-size: 32px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: 'montserrat';
+}
+.list {
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+.var {
+    color: var(--main-color);
+}
+.list > .icon-dasbord {
+    padding: 10px;
+}
+.list > .text-icon {
+    font-family: 'montserrat';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+}
+ul > .click-shape{
+    margin: 20px;
+    background-color:rgb(255, 149, 166) ;
+    width: 282px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
