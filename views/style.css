@@ -9,6 +9,10 @@
 :root {
     --main-color : #000;
     --active-color : #fff;
+    --line-color3 :  linear-gradient(118deg, #51FFF5 0%, #BD00FF 100%);
+    --linee-color4 :  linear-gradient(118deg, #CD1900 0%, #FFC700 100%);
+    --line-color2: linear-gradient(118deg, #B921D2 0%, #1D00CD 100%);
+    --line-color1 : linear-gradient(118deg, #CD1900 0%, #FFC700 100%);
 }
 * {
     margin: 0;
@@ -16,7 +20,9 @@
 }
 
 body {
-    background-color:  #212121;;
+    background-color:  #212121;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .container {
     width: 330px;
@@ -49,11 +55,12 @@ body {
     margin: 20px auto;
     margin-left: 20px;
     text-decoration: none;
+    animation-duration: 5s;
+    animation-delay: 10ms;
+    color: var(--active-color);
+}
 
-}
-.var {
-    color: var(--main-color);
-}
+
 .list > .icon-dasbord {
     padding: 10px;
 }
@@ -66,11 +73,180 @@ body {
 ul {
     list-style: none;
 }
-ul > .click-shape{
+ .active {
     margin: 20px;
     background-color:rgb(255, 149, 166) ;
     width: 282px;
+    color: var(--active-color);
     height: 51px;
     flex-shrink: 0;
     border-radius: 10px;
+}
+
+
+.container-widget-dsb {
+    margin-left: 370px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    width: 930px;
+    height: 750px;
+    border-radius: 20px;
+    background: #2B313A;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.text-widget-1 {
+    margin: 20px;
+    color: var(--active-color);
+    font-family:Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* card list row */
+.list-card-row {
+  display: flex;
+  margin-left: 30px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+}
+.mini-bar {
+    position: absolute;
+    left: 660px;
+    top: 90px;
+    
+}
+ .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 300px;
+    height: 150px;
+    border-radius: 35px;
+    border: 1px solid #FFF;
+    background: linear-gradient(146deg, rgba(217, 217, 217, 0.40) 0%, rgba(217, 217, 217, 0.00) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.div {
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.div > .text-1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} 
+.div > .text-int {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} 
+
+.div > .text-int-active {
+    color: var(--main-color);
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.div > .text-1-active {
+    color: var(--main-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.div > .line {
+    width: 110.619px;
+    height: 3.877px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.div > .l-color {
+    background: var(--line-color1);
+}
+
+.div > .l-color2 {
+    background: var(--line-color2);
+}
+.list-widget-card-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.div > .l-color3 {
+    background: var(--line-color3);
+}
+.div > .l-color4 {
+    background: var(--linee-color4);
+}
+
+
+/* shape elements */
+.shape-element {
+    position: absolute;
+    z-index: -1;
+    left: 65em;
+    top: -300px;
+    /* filter: blur(100px); */
+    width: 786px;
+    height: 786px;
+    border-radius: 786px;
+    background: linear-gradient(212deg, #ffffff 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.color-card-active1 {
+    color: var(--main-color);
+    background: linear-gradient(146deg, rgba(255, 11, 218, 0.572) 0%, rgba(69, 0, 181, 0.40) 100%);
+    backdrop-filter: blur(50px);  
+}
+
+.content-btc {
+    position: relative;
+    padding: 25px;
+} 
+.bar-minute {
+    background-color:#6C6C6C; 
+    border-radius: 10px;
+    width: 552px;
+    height: 43px;
+}
+
+.bar-minute > .list-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-family: 'montserrat';
+    color: white;
+    font-weight: normal;
+}
+
+.bar-trading {
+    width: 900px;
+    height: 180px;
+    border-radius: 11px;
+    background: #6C6C6C;
+    z-index: 1;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
